@@ -41,7 +41,7 @@ for (size_t i = 0; i < cloud1.points.size (); ++i)
    // std::cerr << "cloud1.points[" << i << "].z = " << cloud1.points[i].z << std::endl;
   	}
 
-for (size_t i = 0; i < cloud1.points.size (); ++i)
+for (size_t i = 0; i < cloud1.points.size (); i++)
   	{
   	if ( i%10 == int((rand()/RAND_MAX + 1.0f))%10)
     cloud1.points[i].z += 0.1 * rand () / (RAND_MAX + 1.0f);
