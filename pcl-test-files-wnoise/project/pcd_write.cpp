@@ -26,17 +26,17 @@ int
   cloud2.points.resize (cloud2.width * cloud2.height);
 
 
-for (size_t i = 0; i < cloud1.points.size (); ++i)
+for (size_t i = 0; i < cloud1.points.size (); i++)
   	{
     cloud1.points[i].x = 1024 * rand () / (RAND_MAX + 1.0f);
     cloud2.points[i].x = cloud1.points[i].x;
 
     cloud1.points[i].y = 1024 * rand () / (RAND_MAX + 1.0f);
     cloud2.points[i].y = cloud1.points[i].y;
-   
+
     cloud1.points[i].z = 1;
     cloud2.points[i].z = 1;
-    
+
 
    // std::cerr << "cloud1.points[" << i << "].z = " << cloud1.points[i].z << std::endl;
   	}
